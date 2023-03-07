@@ -77,7 +77,7 @@
       <td class="text-center"> <?= $mataKuliah ?></td>
       <td class="text-center"> <?= $nilaiUts ?></td>
       <td class="text-center"> <?= $nilaiUas ?></td>
-      <td class="text-center"> <?= $nilaiUas ?></td>
+      <td class="text-center"> <?= $nilaiTugas ?></td>
       <td class="text-center"> <?= $keterangan ?> </td>
       <td class="text-center"> <?= $predikat?></td>
       <td class="text-center"> <?= $pnilai ?></td>
