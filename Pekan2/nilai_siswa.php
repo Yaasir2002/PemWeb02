@@ -20,9 +20,10 @@
       <th scope="col" class="text-center">Nilai UTS</th>
       <th scope="col" class="text-center">Nilai UAS</th>
       <th scope="col" class="text-center">Nilai Tugas/Praktek</th>
-      <th scope="col" class="text-center">Keterangan</th>
+      <th scope="col" class="text-center">Rata - Rata</th>
       <th scope="col" class="text-center">Grade Nilai</th>
       <th scope="col" class="text-center">Predikat Nilai</th>
+      <th scope="col" class="text-center">Keterangan</th>
     </tr>
   </thead>
   <tbody>
@@ -79,10 +80,10 @@
       <td class="text-center"> <?= $nilaiUts ?></td>
       <td class="text-center"> <?= $nilaiUas ?></td>
       <td class="text-center"> <?= $nilaiTugas ?></td>
-      <td class="text-center"> <?= $keterangan ?> </td>
+      <td class="text-center"> <?= $avarage ?></td>
       <td class="text-center"> <?= $predikat?></td>
       <td class="text-center"> <?= $pnilai ?></td>
-      <td> <?= $avarage ?></td>
+      <td class="text-center"> <?= $keterangan ?> </td>
     </tr>
   </tbody>
 </table>
