@@ -35,33 +35,34 @@
     $nilaiTugas = $_POST['nilaiTugas'];
     $avarage= ($_POST['nilaiUts']*30/100) + ($_POST['nilaiUas']*35/100) + ($_POST['nilaiTugas']*35/100);
 
-    if($avarage > 55){
+    if($avarage > 55 && $avarage <101){
       $keterangan = "Lulus";
-    }
-    else{
+    }elseif ($avarage >100){
+      $keterangan = "Tidak Terdefinisi";
+    }else{
       $keterangan = "Tidak Lulus";
     }
     ?>
 
     <?php
     switch($avarage){
-      case $avarage >= 0 && $avarage <= 35 :
+      case $avarage > 0 && $avarage < 35 :
         $predikat = "E";
         $pnilai = "sangat kurang";
         break;
-      case $avarage >= 36 && $avarage <= 55 :
+      case $avarage > 36 && $avarage < 55 :
         $predikat = "D";
         $pnilai = "Kurang";
         break;
-      case $avarage >= 56 && $avarage <= 69 :
+      case $avarage > 56 && $avarage < 69 :
         $predikat =  "C";
         $pnilai = "Cukup";
         break;
-      case $avarage >= 70 && $avarage <= 84 :
+      case $avarage > 70 && $avarage < 84 :
         $predikat =  "B";
         $pnilai = "Memuaskan";
         break;
-      case $avarage >= 85 && $avarage <= 100 :
+      case $avarage > 85 && $avarage < 100 :
         $predikat =  "A";
         $pnilai = "Sangat Memuaskan";
         break;
@@ -81,6 +82,7 @@
       <td class="text-center"> <?= $keterangan ?> </td>
       <td class="text-center"> <?= $predikat?></td>
       <td class="text-center"> <?= $pnilai ?></td>
+      <td> <?= $avarage ?></td>
     </tr>
   </tbody>
 </table>
