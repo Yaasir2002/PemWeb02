@@ -13,17 +13,17 @@
     <div class="container-fluid mt-5">
         <p class="display-4 text-center font-weight-bold text-primary">Form Pengisian Nilai</p>
         <hr>
-        <form method="POST" action="nilai_siswa.php">
+        <form method="POST" action="hasil.php">
   <div class="form-group row">
     <label for="namaLengkap" class="col-4 col-form-label">Nama Lengkap</label> 
     <div class="col-8">
-      <input id="namaLengkap" name="namaLengkap" placeholder="Nama Lengkap" type="text" class="form-control" >
+      <input id="namaLengkap" name="namaLengkap" placeholder="Nama Lengkap" type="text" class="form-control" required>
     </div>
   </div>
   <div class="form-group row">
     <label for="mataKuliah" class="col-4 col-form-label">Mata Kuliah</label> 
     <div class="col-8">
-      <select id="mataKuliah" name="mataKuliah" class="custom-select">
+      <select id="mataKuliah" name="mataKuliah" class="custom-select" required>
         <option value="Pemrograman Web">Pemrograman web</option>
         <option value="Basis Data">Basis Data</option>
         <option value="Jarkom">Jaringan Komputer</option>
@@ -33,19 +33,19 @@
   <div class="form-group row">
     <label for="nilaiUts" class="col-4 col-form-label">Nilai UTS</label> 
     <div class="col-8">
-      <input id="nilaiUts" name="nilaiUts" placeholder="Nilai UTS" type="text" class="form-control">
+      <input id="nilaiUts" name="nilaiUts" placeholder="Nilai UTS" type="text" class="form-control" required>
     </div>
   </div>
   <div class="form-group row">
     <label for="nilaiUas" class="col-4 col-form-label">Nilai UAS</label> 
     <div class="col-8">
-      <input id="nilaiUas" name="nilaiUas" placeholder="Nilai UAS" type="text" class="form-control">
+      <input id="nilaiUas" name="nilaiUas" placeholder="Nilai UAS" type="text" class="form-control" required>
     </div>
   </div>
   <div class="form-group row">
     <label for="nilaiTugas" class="col-4 col-form-label">NIlai Tugas/Praktikum</label> 
     <div class="col-8">
-      <input id="nilaiTugas" name="nilaiTugas" placeholder="Nilai Tugas/Praktikum" type="text" class="form-control">
+      <input id="nilaiTugas" name="nilaiTugas" placeholder="Nilai Tugas/Praktikum" type="text" class="form-control" required>
     </div>
   </div> 
   <div class="form-group row">
